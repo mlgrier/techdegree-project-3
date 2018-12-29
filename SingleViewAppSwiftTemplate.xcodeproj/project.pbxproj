@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					3A8AADC41DF9B85E00A2B931 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SJFS67T543;
 						ProvisioningStyle = Automatic;
 					};
 					3A8AADD81DF9B85E00A2B931 = {
@@ -410,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SJFS67T543;
 				INFOPLIST_FILE = SingleViewAppSwiftTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.SingleViewAppSwiftTemplate;
@@ -422,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SJFS67T543;
 				INFOPLIST_FILE = SingleViewAppSwiftTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamtreehouse.SingleViewAppSwiftTemplate;
@@ -503,6 +506,7 @@
 				3A8AADEF1DF9B85E00A2B931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A8AADF01DF9B85E00A2B931 /* Build configuration list for PBXNativeTarget "SingleViewAppSwiftTemplateTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +515,7 @@
 				3A8AADF21DF9B85E00A2B931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A8AADF31DF9B85E00A2B931 /* Build configuration list for PBXNativeTarget "SingleViewAppSwiftTemplateUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				3A8AADF51DF9B85E00A2B931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
