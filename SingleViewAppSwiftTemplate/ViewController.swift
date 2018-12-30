@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import GameKit
 
 class ViewController: UIViewController {
+    
+    // Struct for the events
+    let historicalEvents = HistoricalEvents()
+    
+    var indexOfSelectedQuestion = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
         //view.layer.cornerRadius = 44
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func randomlyPopulateEvents() {
+        let indexOfQuestion = randomNumber()
+        let questionDictionary = historicalEvents.events[indexOfQuestion]
+        questionField.text = questionDictionary["Event"]
+    }
+    
+    func randomNumber() -> Int {
+        // Loop to check if index has been used
+        repeat {
+            indexOfSelectedQuestion = GKRandomSource.sharedRandom().nextInt(upperBound: historicalEvents.events.count)
+        } while arrayOfIndex.contains(indexOfSelectedQuestion)
+        // Add index to array
+        arrayOfIndex.append(indexOfSelectedQuestion)
+        
+        return indexOfSelectedQuestion
     }
 
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct historicalEvents {
+struct HistoricalEvents {
     let events: [[String : String]] = [
         ["Event": "Slavery comes to North America", "Year": "1619"],
         ["Event": "Rise of the cotton industry", "Year": "1793"],
