@@ -13,6 +13,7 @@ struct HistoricalEvents {
     let year: String
 }
 
+
 let events = [
     HistoricalEvents(event: "Slavery comes to North America", year: "1619"),
     HistoricalEvents(event: "Rise of the cotton industry", year: "1793"),
@@ -43,3 +44,5 @@ let events = [
     HistoricalEvents(event: "Million Man March", year: "1995"),
     HistoricalEvents(event: "Barack Obama becomes 44th U.S. president", year: "2008")
 ]
+
+
