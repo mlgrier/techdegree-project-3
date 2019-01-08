@@ -9,38 +9,37 @@
 import Foundation
 
 struct HistoricalEvents {
-    let events: [[String : String]] = [
-        ["Event": "Slavery comes to North America", "Year": "1619"],
-        ["Event": "Rise of the cotton industry", "Year": "1793"],
-        ["Event": "Nat Turner’s Revolt", "Year": "1831"],
-        ["Event": "Abolitionism and the Underground Railroad", "Year": "1831"],
-        ["Event": "Dred Scott case", "Year": "1857"],
-        ["Event": "John Brown’s raid", "Year": "1859"],
-        ["Event": "Civil War and emancipation", "Year": "1861"],
-        ["Event": "The Post–Slavery South", "Year": "1865"],
-        ["Event": "Separate But Equal", "Year": "1896"],
-        ["Event": "NAACP founded", "Year": "1909"],
-        ["Event": "Harlem Renaissance", "Year": "1920"],
-        ["Event": "African–Americans in WWII", "Year": "1941"],
-        ["Event": "Brown v. Board Of Education", "Year": "1954"],
-        ["Event": "Emmett Till", "Year": "1955"],
-        ["Event": "Rosa Parks and the Montgomery Bus Boycott", "Year": "1955"],
-        ["Event": "Central High School integrated", "Year": "1957"],
-        ["Event": "CORE and Freedom Rides", "Year": "1961"],
-        ["Event": "Integration of Ole Miss", "Year": "1962"],
-        ["Event": "Birmingham church bombed", "Year": "1963"],
-        ["Event": "I Have a Dream Speech", "Year": "1963"],
-        ["Event": "Civil Rights Act", "Year": "1964"],
-        ["Event": "Mississippi Burning Murders", "Year": "1964"],
-        ["Event": "Selma to Montgomery", "Year": "1965"],
-        ["Event": "Malcolm X Shot", "Year": "1965"],
-        ["Event": "Fair Housing Act", "Year": "1968"],
-        ["Event": "MLK Assassinated", "Year": "1968"],
-        ["Event": "Shirley Chisholm Runs for President", "Year": "1972"],
-        ["Event": "The Bakke decision and affirmative action", "Year": "1978"],
-        ["Event": "Oprah Winfrey launches syndicated talk show", "Year": "1986"],
-        ["Event": "Los Angeles riots", "Year": "1992"],
-        ["Event": "Million Man March", "Year": "1995"],
-        ["Event": "Barack Obama becomes 44th U.S. president", "Year": "2008"]
-    ]
+    let event: String
+    let year: String
 }
+
+let events = [
+    HistoricalEvents(event: "Slavery comes to North America", year: "1619"),
+    HistoricalEvents(event: "Rise of the cotton industry", year: "1793"),
+    HistoricalEvents(event: "Nat Turner’s Revolt", year: "1831"),
+    HistoricalEvents(event: "Abolitionism and the Underground Railroad", year: "1831"),
+    HistoricalEvents(event: "Dred Scott case", year: "1857"),
+    HistoricalEvents(event: "John Brown’s raid", year: "1859"),
+    HistoricalEvents(event: "Civil War and emancipation", year: "1861"),
+    HistoricalEvents(event: "The Post–Slavery South", year: "1865"),
+    HistoricalEvents(event: "Separate But Equal", year: "1896"),
+    HistoricalEvents(event: "NAACP founded", year: "1909"),
+    HistoricalEvents(event: "Harlem Renaissance", year: "1920"),
+    HistoricalEvents(event: "African–Americans in WWII", year: "1941"),
+    HistoricalEvents(event: "Brown v. Board Of Education", year: "1954"),
+    HistoricalEvents(event: "Emmett Till", year: "1955"),
+    HistoricalEvents(event: "Rosa Parks and the Montgomery Bus Boycott", year: "1955"),
+    HistoricalEvents(event: "Central High School integrated", year: "1957"),
+    HistoricalEvents(event: "CORE and Freedom Rides", year: "1961"),
+    HistoricalEvents(event: "Integration of Ole Miss", year: "1962"),
+    HistoricalEvents(event: "I Have a Dream Speech", year: "1963"),
+    HistoricalEvents(event: "Civil Rights Act", year: "1964"),
+    HistoricalEvents(event: "Selma to Montgomery", year: "1965"),
+    HistoricalEvents(event: "MLK Assassinated", year: "1968"),
+    HistoricalEvents(event: "Shirley Chisholm Runs for President", year: "1972"),
+    HistoricalEvents(event: "The Bakke decision and affirmative action", year: "1978"),
+    HistoricalEvents(event: "Oprah Winfrey launches syndicated talk show", year: "1986"),
+    HistoricalEvents(event: "Los Angeles riots", year: "1992"),
+    HistoricalEvents(event: "Million Man March", year: "1995"),
+    HistoricalEvents(event: "Barack Obama becomes 44th U.S. president", year: "2008")
+]
