@@ -64,14 +64,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kxh-Z4-bXx">
                                                 <rect key="frame" x="295" y="0.0" width="38" height="121"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr7-BU-GLA">
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr7-BU-GLA">
                                                         <rect key="frame" x="0.0" y="0.0" width="38" height="60.5"/>
                                                         <state key="normal" image="up_half"/>
                                                         <connections>
                                                             <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1m-pp-kSF"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ix-Eb-HU7">
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ix-Eb-HU7">
                                                         <rect key="frame" x="0.0" y="60.5" width="38" height="60.5"/>
                                                         <state key="normal" image="down_half"/>
                                                         <connections>
@@ -108,14 +108,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bxU-8u-XMd">
                                                 <rect key="frame" x="295" y="0.0" width="38" height="121"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMu-L6-AFl">
+                                                    <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMu-L6-AFl">
                                                         <rect key="frame" x="0.0" y="0.0" width="38" height="60.5"/>
                                                         <state key="normal" image="up_half"/>
                                                         <connections>
                                                             <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qx2-af-d3B"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZi-2e-DQ5">
+                                                    <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZi-2e-DQ5">
                                                         <rect key="frame" x="0.0" y="60.5" width="38" height="60.5"/>
                                                         <state key="normal" image="down_half"/>
                                                         <connections>
@@ -149,7 +149,7 @@
                                                 <color key="textColor" red="0.0056471191349999998" green="0.1268728375" blue="0.23898330330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpO-ax-awa">
+                                            <button opaque="NO" tag="5" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpO-ax-awa">
                                                 <rect key="frame" x="295" y="0.0" width="38" height="121"/>
                                                 <state key="normal" image="up_full_selected"/>
                                                 <connections>
