@@ -11,16 +11,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // Struct for the events
-    let historicalEvents = HistoricalEvents()
-    
-    var indexOfSelectedQuestion = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //view.layer.cornerRadius = 44
-
     }
 
     
