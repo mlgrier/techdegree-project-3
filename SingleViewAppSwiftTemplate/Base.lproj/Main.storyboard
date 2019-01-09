@@ -197,12 +197,17 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outletCollection property="upAndDownButtons" destination="R2v-oI-BVz" collectionClass="NSMutableArray" id="WRu-mV-jfp"/>
-                        <outletCollection property="upAndDownButtons" destination="vr7-BU-GLA" collectionClass="NSMutableArray" id="JeK-XP-ZJM"/>
-                        <outletCollection property="upAndDownButtons" destination="0ix-Eb-HU7" collectionClass="NSMutableArray" id="YAJ-uM-zSo"/>
-                        <outletCollection property="upAndDownButtons" destination="TMu-L6-AFl" collectionClass="NSMutableArray" id="Awa-3x-M5X"/>
-                        <outletCollection property="upAndDownButtons" destination="JZi-2e-DQ5" collectionClass="NSMutableArray" id="Iw8-HQ-pI6"/>
-                        <outletCollection property="upAndDownButtons" destination="ZpO-ax-awa" collectionClass="NSMutableArray" id="0Y6-rg-OTB"/>
+                        <outlet property="downButton1" destination="R2v-oI-BVz" id="f5N-4k-YNY"/>
+                        <outlet property="downButton2" destination="0ix-Eb-HU7" id="8wq-KR-fl1"/>
+                        <outlet property="downButton3" destination="JZi-2e-DQ5" id="JAh-bB-66t"/>
+                        <outlet property="labelNumber1" destination="Ghm-ah-JHl" id="Lmp-E6-5Rv"/>
+                        <outlet property="labelNumber2" destination="ar7-ns-a8k" id="Nmm-wX-CZS"/>
+                        <outlet property="labelNumber3" destination="aRD-rb-YmR" id="wpp-PZ-FM0"/>
+                        <outlet property="labelNumber4" destination="Z3B-FI-ztf" id="BfR-Hl-gNX"/>
+                        <outlet property="timer" destination="xZC-yZ-x1J" id="0hl-rM-C5O"/>
+                        <outlet property="upButton1" destination="vr7-BU-GLA" id="qnD-Yh-nay"/>
+                        <outlet property="upButton2" destination="TMu-L6-AFl" id="RIU-YH-OBU"/>
+                        <outlet property="upButton3" destination="ZpO-ax-awa" id="HT1-Xc-ERM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

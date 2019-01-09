@@ -11,7 +11,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var upAndDownButtons: [UIButton]!
+    @IBOutlet weak var upButton1: UIButton!
+    @IBOutlet weak var upButton2: UIButton!
+    @IBOutlet weak var upButton3: UIButton!
+    
+    @IBOutlet weak var downButton1: UIButton!
+    @IBOutlet weak var downButton2: UIButton!
+    @IBOutlet weak var downButton3: UIButton!
+    
+    @IBOutlet weak var labelNumber1: UILabel!
+    @IBOutlet weak var labelNumber2: UILabel!
+    @IBOutlet weak var labelNumber3: UILabel!
+    @IBOutlet weak var labelNumber4: UILabel!
+    
+    @IBOutlet weak var timer: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
