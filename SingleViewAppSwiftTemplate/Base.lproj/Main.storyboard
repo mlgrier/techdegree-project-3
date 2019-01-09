@@ -36,6 +36,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-oI-BVz">
                                                 <rect key="frame" x="295" y="0.0" width="38" height="121"/>
                                                 <state key="normal" image="down_full"/>
+                                                <connections>
+                                                    <action selector="downButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1L8-lg-kvo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,10 +67,16 @@
                                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr7-BU-GLA">
                                                         <rect key="frame" x="0.0" y="0.0" width="38" height="60.5"/>
                                                         <state key="normal" image="up_half"/>
+                                                        <connections>
+                                                            <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1m-pp-kSF"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ix-Eb-HU7">
                                                         <rect key="frame" x="0.0" y="60.5" width="38" height="60.5"/>
                                                         <state key="normal" image="down_half"/>
+                                                        <connections>
+                                                            <action selector="downButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4M-oa-8M6"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -102,10 +111,16 @@
                                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMu-L6-AFl">
                                                         <rect key="frame" x="0.0" y="0.0" width="38" height="60.5"/>
                                                         <state key="normal" image="up_half"/>
+                                                        <connections>
+                                                            <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qx2-af-d3B"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZi-2e-DQ5">
                                                         <rect key="frame" x="0.0" y="60.5" width="38" height="60.5"/>
                                                         <state key="normal" image="down_half"/>
+                                                        <connections>
+                                                            <action selector="downButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wZ-nh-6iO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -137,6 +152,9 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpO-ax-awa">
                                                 <rect key="frame" x="295" y="0.0" width="38" height="121"/>
                                                 <state key="normal" image="up_full_selected"/>
+                                                <connections>
+                                                    <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="44Y-hK-8li"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -178,6 +196,14 @@
                             <constraint firstItem="axl-MH-qqC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="tJ0-KL-QqJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="upAndDownButtons" destination="R2v-oI-BVz" collectionClass="NSMutableArray" id="WRu-mV-jfp"/>
+                        <outletCollection property="upAndDownButtons" destination="vr7-BU-GLA" collectionClass="NSMutableArray" id="JeK-XP-ZJM"/>
+                        <outletCollection property="upAndDownButtons" destination="0ix-Eb-HU7" collectionClass="NSMutableArray" id="YAJ-uM-zSo"/>
+                        <outletCollection property="upAndDownButtons" destination="TMu-L6-AFl" collectionClass="NSMutableArray" id="Awa-3x-M5X"/>
+                        <outletCollection property="upAndDownButtons" destination="JZi-2e-DQ5" collectionClass="NSMutableArray" id="Iw8-HQ-pI6"/>
+                        <outletCollection property="upAndDownButtons" destination="ZpO-ax-awa" collectionClass="NSMutableArray" id="0Y6-rg-OTB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
