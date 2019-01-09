@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GameKit
+
 
 class ViewController: UIViewController {
     
@@ -23,22 +23,7 @@ class ViewController: UIViewController {
 
     }
 
-    func randomlyPopulateEvents() {
-        let indexOfQuestion = randomNumber()
-        let questionDictionary = historicalEvents.events[indexOfQuestion]
-        questionField.text = questionDictionary["Event"]
-    }
     
-    func randomNumber() -> Int {
-        // Loop to check if index has been used
-        repeat {
-            indexOfSelectedQuestion = GKRandomSource.sharedRandom().nextInt(upperBound: historicalEvents.events.count)
-        } while arrayOfIndex.contains(indexOfSelectedQuestion)
-        // Add index to array
-        arrayOfIndex.append(indexOfSelectedQuestion)
-        
-        return indexOfSelectedQuestion
-    }
 
 
 }
