@@ -9,6 +9,7 @@
 import Foundation
 import GameKit
 
+
 var arrayOfIndex = [Int]()
 
 
