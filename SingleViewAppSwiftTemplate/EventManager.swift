@@ -44,5 +44,41 @@ func randomEvent() -> HistoricalEvents {
     return event
 }
 
+extension ViewController {
+    
+    func textSwap(sender: UIButton) {
+        switch (sender as AnyObject).tag {
+        case 0:
+            //Swapped text of label
+            labelNumber1.text = event2
+            labelNumber2.text = event1
+            //Swapped Var to hold the new String
+            (event1,event2) = (event2,event1)
+        case 1:
+            labelNumber2.text = event1
+            labelNumber1.text = event2
+            (event1,event2) = (event2,event1)
+        case 2:
+            labelNumber2.text = event3
+            labelNumber3.text = event2
+            (event2,event3) = (event3,event2)
+        case 3:
+            labelNumber2.text = event3
+            labelNumber3.text = event2
+            (event2,event3) = (event3,event2)
+        case 4:
+            labelNumber3.text = event4
+            labelNumber4.text = event3
+            (event3,event4) = (event4,event3)
+        case 5:
+            labelNumber3.text = event4
+            labelNumber4.text = event3
+            (event3,event4) = (event4,event3)
+        default:
+            print("error")
+        }
+    }
+}
+
 
 
