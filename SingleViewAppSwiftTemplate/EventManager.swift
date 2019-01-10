@@ -77,10 +77,10 @@ func randomEvent() -> HistoricalEvents {
 }
 
 
-//func randomlyPopulateEvents() {
-//    let indexOfQuestion = randomNumber()
-//    let questionDictionary = historicalEvents.events[indexOfQuestion]
-//    questionField.text = questionDictionary["Event"]
+//func showRandomEvent() {
+//    let indexOfEvent = randomEvent()
+//    let pickedEvent = events[indexOfEvent]
+//    questionField.text = 
 //}
 
 

@@ -29,6 +29,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //view.layer.cornerRadius = 44
+        
+        displayEvent()
+        
+    }
+    
+    func displayEvent() {
+        
+        let theEvent = randomEvent()
+        labelNumber1.text = theEvent.event
+        
+        let theEvent1 = randomEvent()
+        labelNumber2.text = theEvent1.event
+        
+        let theEvent2 = randomEvent()
+        labelNumber3.text = theEvent2.event
+        
+        let theEvent3 = randomEvent()
+        labelNumber4.text = theEvent3.event
+        
     }
     
     @IBAction func upButton(_ sender: UIButton) {
