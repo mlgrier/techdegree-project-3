@@ -37,7 +37,7 @@
                                                 <rect key="frame" x="295" y="0.0" width="38" height="121"/>
                                                 <state key="normal" image="down_full"/>
                                                 <connections>
-                                                    <action selector="downButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1L8-lg-kvo"/>
+                                                    <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VD1-ak-YjM"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -68,14 +68,14 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="38" height="60.5"/>
                                                         <state key="normal" image="up_half"/>
                                                         <connections>
-                                                            <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1m-pp-kSF"/>
+                                                            <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8t-Tj-xcL"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ix-Eb-HU7">
                                                         <rect key="frame" x="0.0" y="60.5" width="38" height="60.5"/>
                                                         <state key="normal" image="down_half"/>
                                                         <connections>
-                                                            <action selector="downButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4M-oa-8M6"/>
+                                                            <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Hj-rd-Flj"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -112,14 +112,14 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="38" height="60.5"/>
                                                         <state key="normal" image="up_half"/>
                                                         <connections>
-                                                            <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qx2-af-d3B"/>
+                                                            <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n47-gJ-eRz"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZi-2e-DQ5">
                                                         <rect key="frame" x="0.0" y="60.5" width="38" height="60.5"/>
                                                         <state key="normal" image="down_half"/>
                                                         <connections>
-                                                            <action selector="downButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wZ-nh-6iO"/>
+                                                            <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nKC-2h-wLF"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -153,7 +153,7 @@
                                                 <rect key="frame" x="295" y="0.0" width="38" height="121"/>
                                                 <state key="normal" image="up_full_selected"/>
                                                 <connections>
-                                                    <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="44Y-hK-8li"/>
+                                                    <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGv-sz-s3Y"/>
                                                 </connections>
                                             </button>
                                         </subviews>

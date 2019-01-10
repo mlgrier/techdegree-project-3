@@ -44,29 +44,66 @@ class ViewController: UIViewController {
     func displayEvent() {
         
         let theEvent1 = randomEvent()
-        labelNumber1.text = theEvent1.event
         event1 = theEvent1.event
+        labelNumber1.text = theEvent1.event
         
         let theEvent2 = randomEvent()
-        labelNumber2.text = theEvent2.event
         event2 = theEvent2.event
+        labelNumber2.text = theEvent2.event
         
         let theEvent3 = randomEvent()
-        labelNumber3.text = theEvent3.event
         event3 = theEvent3.event
+        labelNumber3.text = theEvent3.event
         
         let theEvent4 = randomEvent()
-        labelNumber4.text = theEvent4.event
         event4 = theEvent4.event
+        labelNumber4.text = theEvent4.event
         
     }
     
-    @IBAction func upButton(_ sender: UIButton) {
-        //if sender.tag == 
+    @IBAction func upDownButtonPushed(_ sender: Any) {
+        switch (sender as AnyObject).tag {
+        case 0:
+            labelNumber1.text = event2
+            labelNumber2.text = event1
+            event1 = event2
+            event2 = event1
+            print("tag 0")
+        case 1:
+            labelNumber2.text = event1
+            labelNumber1.text = event2
+            event1 = event2
+            event2 = event1
+            print("tag 1")
+        case 2:
+            labelNumber2.text = event3
+            labelNumber3.text = event2
+            event2 = event3
+            event3 = event2
+            print("tag 2")
+        case 3:
+            labelNumber2.text = event3
+            labelNumber3.text = event2
+            event2 = event3
+            event3 = event2
+            print("tag 3")
+        case 4:
+            labelNumber3.text = event4
+            labelNumber4.text = event3
+            event3 = event4
+            event4 = event3
+            print("tag 4")
+        case 5:
+            labelNumber3.text = event4
+            labelNumber4.text = event3
+            event3 = event4
+            event4 = event3
+            print("tag 5")
+        default:
+            print("error")
+        }
     }
     
-    @IBAction func downButton(_ sender: UIButton) {
-    }
     
 }
 
