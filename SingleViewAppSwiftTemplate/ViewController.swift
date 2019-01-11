@@ -60,6 +60,7 @@ class ViewController: UIViewController {
         print("Device was shaken!")
         eventOrderCheck()
         //test
+        //testing again
     }
     
 }
