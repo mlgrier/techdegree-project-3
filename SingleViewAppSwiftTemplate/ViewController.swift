@@ -16,6 +16,16 @@ class ViewController: UIViewController {
     var event3 = ""
     var event4 = ""
     
+    var event1Year = 0
+    var event2Year = 0
+    var event3Year = 0
+    var event4Year = 0
+    
+    var spot1 = 0
+    var spot2 = 0
+    var spot3 = 0
+    var spot4 = 0
+    
     @IBOutlet weak var upButton1: UIButton!
     @IBOutlet weak var upButton2: UIButton!
     @IBOutlet weak var upButton3: UIButton!
@@ -37,27 +47,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //view.layer.cornerRadius = 44
         
-        displayEvent()
-        
-    }
-    
-    func displayEvent() {
-        
-        let theEvent1 = randomEvent()
-        event1 = theEvent1.event
-        labelNumber1.text = theEvent1.event
-        
-        let theEvent2 = randomEvent()
-        event2 = theEvent2.event
-        labelNumber2.text = theEvent2.event
-        
-        let theEvent3 = randomEvent()
-        event3 = theEvent3.event
-        labelNumber3.text = theEvent3.event
-        
-        let theEvent4 = randomEvent()
-        event4 = theEvent4.event
-        labelNumber4.text = theEvent4.event
+        getAndDisplayEvent()
         
     }
     
@@ -65,7 +55,11 @@ class ViewController: UIViewController {
         let buttonPushed = sender
         textSwap(sender: buttonPushed)
     }
-    
+
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        print("Device was shaken!")
+        eventOrderCheck()
+    }
     
 }
 

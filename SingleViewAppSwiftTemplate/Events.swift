@@ -12,7 +12,6 @@ import Foundation
 let events = [
     HistoricalEvents(event: "Slavery comes to North America", year: "1619"),
     HistoricalEvents(event: "Rise of the cotton industry", year: "1793"),
-    HistoricalEvents(event: "Nat Turner’s Revolt", year: "1831"),
     HistoricalEvents(event: "Abolitionism and the Underground Railroad", year: "1831"),
     HistoricalEvents(event: "Dred Scott case", year: "1857"),
     HistoricalEvents(event: "John Brown’s raid", year: "1859"),
@@ -23,7 +22,6 @@ let events = [
     HistoricalEvents(event: "Harlem Renaissance", year: "1920"),
     HistoricalEvents(event: "African–Americans in WWII", year: "1941"),
     HistoricalEvents(event: "Brown v. Board Of Education", year: "1954"),
-    HistoricalEvents(event: "Emmett Till", year: "1955"),
     HistoricalEvents(event: "Rosa Parks and the Montgomery Bus Boycott", year: "1955"),
     HistoricalEvents(event: "Central High School integrated", year: "1957"),
     HistoricalEvents(event: "CORE and Freedom Rides", year: "1961"),
