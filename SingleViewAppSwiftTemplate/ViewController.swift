@@ -21,6 +21,11 @@ class ViewController: UIViewController {
     var event3Year = ""
     var event4Year = ""
     
+    var block1 = ""
+    var block2 = ""
+    var block3 = ""
+    var block4 = ""
+    
     @IBOutlet weak var upButton1: UIButton!
     @IBOutlet weak var upButton2: UIButton!
     @IBOutlet weak var upButton3: UIButton!
@@ -42,42 +47,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //view.layer.cornerRadius = 44
         
-        displayEvent()
+        getAndDisplayEvent()
         
     }
     
-    func displayEvent() {
-        
-        let theEvent1 = randomEvent()
-        event1 = theEvent1.event
-        event1Year = theEvent1.year
-        labelNumber1.text = theEvent1.event
-        
-        let theEvent2 = randomEvent()
-        event2 = theEvent2.event
-        event2Year = theEvent2.year
-        labelNumber2.text = theEvent2.event
-        
-        let theEvent3 = randomEvent()
-        event3 = theEvent3.event
-        event3Year = theEvent3.year
-        labelNumber3.text = theEvent3.event
-        
-        let theEvent4 = randomEvent()
-        event4 = theEvent4.event
-        event4Year = theEvent4.year
-        labelNumber4.text = theEvent4.event
-        
-    }
     
     @IBAction func upDownButtonPushed(_ sender: UIButton) {
         let buttonPushed = sender
         textSwap(sender: buttonPushed)
     }
     
-    func eventOrderCheck() {
-        
-    }
+//    func eventOrderCheck() {
+//        
+//        
+//    }
     
     
 }
