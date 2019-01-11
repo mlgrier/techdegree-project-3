@@ -38,6 +38,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelNumber2: UILabel!
     @IBOutlet weak var labelNumber3: UILabel!
     @IBOutlet weak var labelNumber4: UILabel!
+    @IBOutlet weak var shakeLabel: UILabel!
     
     @IBOutlet weak var timer: UILabel!
     
@@ -59,8 +60,6 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         print("Device was shaken!")
         eventOrderCheck()
-        //test
-        //testing again
     }
     
 }

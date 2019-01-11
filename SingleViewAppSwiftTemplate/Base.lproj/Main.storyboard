@@ -204,6 +204,7 @@
                         <outlet property="labelNumber2" destination="ar7-ns-a8k" id="Nmm-wX-CZS"/>
                         <outlet property="labelNumber3" destination="aRD-rb-YmR" id="wpp-PZ-FM0"/>
                         <outlet property="labelNumber4" destination="Z3B-FI-ztf" id="BfR-Hl-gNX"/>
+                        <outlet property="shakeLabel" destination="xqp-wf-S4S" id="Rbw-cw-iiB"/>
                         <outlet property="timer" destination="xZC-yZ-x1J" id="0hl-rM-C5O"/>
                         <outlet property="upButton1" destination="vr7-BU-GLA" id="qnD-Yh-nay"/>
                         <outlet property="upButton2" destination="TMu-L6-AFl" id="RIU-YH-OBU"/>
