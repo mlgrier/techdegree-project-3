@@ -16,15 +16,15 @@ class ViewController: UIViewController {
     var event3 = ""
     var event4 = ""
     
-    var event1Year = ""
-    var event2Year = ""
-    var event3Year = ""
-    var event4Year = ""
+    var event1Year = 0
+    var event2Year = 0
+    var event3Year = 0
+    var event4Year = 0
     
-    var block1 = ""
-    var block2 = ""
-    var block3 = ""
-    var block4 = ""
+    var spot1 = 0
+    var spot2 = 0
+    var spot3 = 0
+    var spot4 = 0
     
     @IBOutlet weak var upButton1: UIButton!
     @IBOutlet weak var upButton2: UIButton!
@@ -57,11 +57,18 @@ class ViewController: UIViewController {
         textSwap(sender: buttonPushed)
     }
     
-//    func eventOrderCheck() {
-//        
-//        
-//    }
-    
+    func eventOrderCheck() {
+        if (spot1 < spot2) && (spot2 < spot3) && (spot3 < spot4) {
+            print("You WON!")
+        } else {
+            print("NO YOU LOSE CLOWN!")
+        }
+    }
+
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        print("Device was shaken!")
+        eventOrderCheck()
+    }
     
 }
 
