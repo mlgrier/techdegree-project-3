@@ -61,8 +61,8 @@ class ViewController: UIViewController {
         textSwap(sender: buttonPushed)
     }
 
+    
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        print("Device was shaken!")
         eventOrderCheck()
     }
     
