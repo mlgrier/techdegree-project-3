@@ -194,15 +194,35 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_round_success" translatesAutoresizingMaskIntoConstraints="NO" id="UfE-rz-ccS" userLabel="Round Success">
+                                <rect key="frame" x="82" y="560" width="211" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Frl-zL-AqC"/>
+                                    <constraint firstAttribute="width" constant="211" id="wbd-s5-Gq8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_round_fail" translatesAutoresizingMaskIntoConstraints="NO" id="hgn-gq-6vj" userLabel="Round Fail">
+                                <rect key="frame" x="82" y="560" width="211" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="DcV-1f-Eu5"/>
+                                    <constraint firstAttribute="height" constant="51" id="rBU-xq-aCK"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.15686274509803921" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hgn-gq-6vj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="46J-sC-Hf7"/>
                             <constraint firstItem="axl-MH-qqC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Sm-q0-nC2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="axl-MH-qqC" secondAttribute="bottom" constant="120" id="62n-Bm-8xU"/>
                             <constraint firstItem="xZC-yZ-x1J" firstAttribute="top" secondItem="axl-MH-qqC" secondAttribute="bottom" constant="9" id="7Rk-RL-d5F"/>
+                            <constraint firstItem="hgn-gq-6vj" firstAttribute="top" secondItem="axl-MH-qqC" secondAttribute="bottom" constant="13" id="CZ3-Gr-ezi"/>
                             <constraint firstItem="axl-MH-qqC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Nyy-2U-Wb7"/>
+                            <constraint firstItem="xqp-wf-S4S" firstAttribute="top" secondItem="hgn-gq-6vj" secondAttribute="bottom" constant="4" id="Q8M-hk-eXj"/>
+                            <constraint firstItem="xqp-wf-S4S" firstAttribute="top" secondItem="UfE-rz-ccS" secondAttribute="bottom" constant="4" id="S69-ca-dA6"/>
                             <constraint firstItem="xqp-wf-S4S" firstAttribute="top" secondItem="xZC-yZ-x1J" secondAttribute="bottom" constant="8.5" id="XQm-X4-y5u"/>
                             <constraint firstItem="xqp-wf-S4S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fth-Mm-GuI"/>
+                            <constraint firstItem="UfE-rz-ccS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jp1-UF-IvD"/>
+                            <constraint firstItem="UfE-rz-ccS" firstAttribute="top" secondItem="axl-MH-qqC" secondAttribute="bottom" constant="13" id="mo3-gx-gQ6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="axl-MH-qqC" secondAttribute="trailing" constant="5" id="rBb-Ln-aW9"/>
                             <constraint firstItem="xZC-yZ-x1J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sYK-kS-Ade"/>
                             <constraint firstItem="axl-MH-qqC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="tJ0-KL-QqJ"/>
@@ -212,11 +232,13 @@
                         <outlet property="downButton1" destination="R2v-oI-BVz" id="f5N-4k-YNY"/>
                         <outlet property="downButton2" destination="0ix-Eb-HU7" id="8wq-KR-fl1"/>
                         <outlet property="downButton3" destination="JZi-2e-DQ5" id="JAh-bB-66t"/>
+                        <outlet property="failImage" destination="hgn-gq-6vj" id="knI-Ve-vsk"/>
                         <outlet property="labelNumber1" destination="Ghm-ah-JHl" id="Lmp-E6-5Rv"/>
                         <outlet property="labelNumber2" destination="ar7-ns-a8k" id="Nmm-wX-CZS"/>
                         <outlet property="labelNumber3" destination="aRD-rb-YmR" id="wpp-PZ-FM0"/>
                         <outlet property="labelNumber4" destination="Z3B-FI-ztf" id="BfR-Hl-gNX"/>
                         <outlet property="shakeLabel" destination="xqp-wf-S4S" id="zeg-mo-OeQ"/>
+                        <outlet property="successImage" destination="UfE-rz-ccS" id="Ryc-Xk-GJe"/>
                         <outlet property="timer" destination="xZC-yZ-x1J" id="0hl-rM-C5O"/>
                         <outlet property="upButton1" destination="vr7-BU-GLA" id="qnD-Yh-nay"/>
                         <outlet property="upButton2" destination="TMu-L6-AFl" id="RIU-YH-OBU"/>
@@ -233,6 +255,8 @@
         <image name="down_full_selected" width="158" height="457"/>
         <image name="down_half" width="158" height="229"/>
         <image name="down_half_selected" width="158" height="229"/>
+        <image name="next_round_fail" width="558" height="142"/>
+        <image name="next_round_success" width="558" height="142"/>
         <image name="up_full" width="158" height="457"/>
         <image name="up_full_selected" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>

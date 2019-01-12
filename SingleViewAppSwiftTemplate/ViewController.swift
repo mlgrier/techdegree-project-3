@@ -42,12 +42,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var timer: UILabel!
     @IBOutlet weak var shakeLabel: UILabel!
     
+    @IBOutlet weak var successImage: UIImageView!
+    @IBOutlet weak var failImage: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //view.layer.cornerRadius = 44
         
+        successImage.isHidden = true
+        failImage.isHidden = true
         getAndDisplayEvent()
         
     }
