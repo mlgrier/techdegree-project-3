@@ -137,6 +137,7 @@ extension ViewController {
     
     func eventOrderCheck() {
         if (spot1 < spot2) && (spot2 < spot3) && (spot3 < spot4) {
+            
             print("You WON!")
         } else {
             print("NO YOU LOSE CLOWN!")
