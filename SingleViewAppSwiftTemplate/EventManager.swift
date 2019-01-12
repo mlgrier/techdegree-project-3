@@ -171,6 +171,11 @@ extension ViewController {
         } else {
             // Continue game
             print("Play the next round")
+            getAndDisplayEvent()
+            successImage.isHidden = true
+            failImage.isHidden = true
+            timer.isHidden = false
+            shakeLabel.text = "Shake to complete"
             round += 1
         }
     }
