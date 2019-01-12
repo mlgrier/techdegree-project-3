@@ -76,6 +76,9 @@ extension ViewController {
         spot4 = event4Year
         labelNumber4.text = theEvent4.event
         
+        runTimer()
+        updateTimer()
+        
     }
     
     func textSwap(sender: UIButton) {
@@ -141,12 +144,12 @@ extension ViewController {
             timer.isHidden = true
             successImage.isHidden = false
             points += 1
-            loadNextRound(delay: 3)
+            loadNextRound(delay: 5)
         } else {
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             failImage.isHidden = false
-            loadNextRound(delay: 3)
+            loadNextRound(delay: 5)
         }
     }
     
@@ -179,6 +182,8 @@ extension ViewController {
             round += 1
         }
     }
+    
+    
     
 }
 

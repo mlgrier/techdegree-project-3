@@ -30,6 +30,10 @@ class ViewController: UIViewController {
     var round = 0
     let numberOfRounds = 5
     
+    var gameTimer = Timer()
+    var seconds = 10
+    var isTimerRunning = false
+    
     @IBOutlet weak var upButton1: UIButton!
     @IBOutlet weak var upButton2: UIButton!
     @IBOutlet weak var upButton3: UIButton!
@@ -70,6 +74,19 @@ class ViewController: UIViewController {
         eventOrderCheck()
     }
     
+    func runTimer() {
+        gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
+    }
+    
+    func updateTimer() {
+        seconds -= 1
+        timer.text = "\(seconds)"
+        
+        if seconds <= 0 {
+            eventOrderCheck()
+        }
+        
+    }
     
 }
 
