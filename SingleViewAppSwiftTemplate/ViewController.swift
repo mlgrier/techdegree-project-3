@@ -40,6 +40,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelNumber4: UILabel!
     
     @IBOutlet weak var timer: UILabel!
+    @IBOutlet weak var shakeLabel: UILabel!
     
     
     
