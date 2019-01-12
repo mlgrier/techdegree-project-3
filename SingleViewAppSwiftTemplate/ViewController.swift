@@ -10,7 +10,6 @@ import UIKit
 
 
 class ViewController: UIViewController {
-    //test
     
     var event1 = ""
     var event2 = ""
@@ -26,6 +25,10 @@ class ViewController: UIViewController {
     var spot2 = 0
     var spot3 = 0
     var spot4 = 0
+    
+    var points = 0
+    var round = 0
+    let numberOfRounds = 5
     
     @IBOutlet weak var upButton1: UIButton!
     @IBOutlet weak var upButton2: UIButton!
@@ -66,6 +69,7 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         eventOrderCheck()
     }
+    
     
 }
 

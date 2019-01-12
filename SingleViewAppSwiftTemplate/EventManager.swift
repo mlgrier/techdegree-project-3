@@ -140,10 +140,38 @@ extension ViewController {
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             successImage.isHidden = false
+            points += 1
+            loadNextRound(delay: 3)
         } else {
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             failImage.isHidden = false
+            loadNextRound(delay: 3)
+        }
+    }
+    
+    
+    func loadNextRound(delay seconds: Int) {
+        // Converts a delay in seconds to nanoseconds as signed 64 bit integer
+        let delay = Int64(NSEC_PER_SEC * UInt64(seconds))
+        // Calculates a time value to execute the method given current time and delay
+        let dispatchTime = DispatchTime.now() + Double(delay) / Double(NSEC_PER_SEC)
+        
+        // Executes the nextRound method at the dispatch time on the main queue
+        DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
+            self.nextRound()
+        }
+    }
+    
+    func nextRound() {
+        
+        if round == numberOfRounds {
+            // Game is over
+            print("Send to the other screen showing the score")
+        } else {
+            // Continue game
+            print("Play the next round")
+            round += 1
         }
     }
     
