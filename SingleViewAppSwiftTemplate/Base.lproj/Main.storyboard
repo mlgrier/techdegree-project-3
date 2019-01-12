@@ -182,18 +182,38 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_round_success" translatesAutoresizingMaskIntoConstraints="NO" id="gJN-0o-Lap">
+                                <rect key="frame" x="90.5" y="551" width="194" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Djm-BM-jRM"/>
+                                    <constraint firstAttribute="width" constant="194" id="FBL-of-OcQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_round_fail" translatesAutoresizingMaskIntoConstraints="NO" id="eb5-cm-IZr">
+                                <rect key="frame" x="90.5" y="551" width="194" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="bMC-7A-8P3"/>
+                                    <constraint firstAttribute="height" constant="60" id="sBy-ng-mkL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.15686274509803921" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="eb5-cm-IZr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="42m-dN-cG8"/>
                             <constraint firstItem="axl-MH-qqC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Sm-q0-nC2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="axl-MH-qqC" secondAttribute="bottom" constant="120" id="62n-Bm-8xU"/>
                             <constraint firstItem="xZC-yZ-x1J" firstAttribute="top" secondItem="axl-MH-qqC" secondAttribute="bottom" constant="9" id="7Rk-RL-d5F"/>
+                            <constraint firstItem="xqp-wf-S4S" firstAttribute="top" secondItem="gJN-0o-Lap" secondAttribute="bottom" constant="4" id="Ea3-x8-erZ"/>
                             <constraint firstItem="axl-MH-qqC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Nyy-2U-Wb7"/>
+                            <constraint firstItem="eb5-cm-IZr" firstAttribute="top" secondItem="axl-MH-qqC" secondAttribute="bottom" constant="4" id="Olc-LQ-h0h"/>
+                            <constraint firstItem="gJN-0o-Lap" firstAttribute="top" secondItem="axl-MH-qqC" secondAttribute="bottom" constant="4" id="TWJ-d6-KvP"/>
                             <constraint firstItem="xqp-wf-S4S" firstAttribute="top" secondItem="xZC-yZ-x1J" secondAttribute="bottom" constant="8.5" id="XQm-X4-y5u"/>
+                            <constraint firstItem="gJN-0o-Lap" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fZZ-Hu-TWP"/>
                             <constraint firstItem="xqp-wf-S4S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fth-Mm-GuI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="axl-MH-qqC" secondAttribute="trailing" constant="5" id="rBb-Ln-aW9"/>
                             <constraint firstItem="xZC-yZ-x1J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sYK-kS-Ade"/>
                             <constraint firstItem="axl-MH-qqC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="tJ0-KL-QqJ"/>
+                            <constraint firstItem="xqp-wf-S4S" firstAttribute="top" secondItem="eb5-cm-IZr" secondAttribute="bottom" constant="4" id="v2Q-0t-JFA"/>
                         </constraints>
                     </view>
                     <connections>
@@ -204,6 +224,8 @@
                         <outlet property="labelNumber2" destination="ar7-ns-a8k" id="Nmm-wX-CZS"/>
                         <outlet property="labelNumber3" destination="aRD-rb-YmR" id="wpp-PZ-FM0"/>
                         <outlet property="labelNumber4" destination="Z3B-FI-ztf" id="BfR-Hl-gNX"/>
+                        <outlet property="nextRoundImage" destination="gJN-0o-Lap" id="Y6e-DG-SCx"/>
+                        <outlet property="nextRoundImageFail" destination="eb5-cm-IZr" id="W2t-Ft-Q1P"/>
                         <outlet property="shakeLabel" destination="xqp-wf-S4S" id="Rbw-cw-iiB"/>
                         <outlet property="timer" destination="xZC-yZ-x1J" id="0hl-rM-C5O"/>
                         <outlet property="upButton1" destination="vr7-BU-GLA" id="qnD-Yh-nay"/>
@@ -219,6 +241,8 @@
     <resources>
         <image name="down_full" width="158" height="457"/>
         <image name="down_half" width="158" height="229"/>
+        <image name="next_round_fail" width="558" height="142"/>
+        <image name="next_round_success" width="558" height="142"/>
         <image name="up_full_selected" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
     </resources>

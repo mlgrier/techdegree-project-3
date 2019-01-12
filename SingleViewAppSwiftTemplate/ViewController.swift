@@ -38,7 +38,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelNumber2: UILabel!
     @IBOutlet weak var labelNumber3: UILabel!
     @IBOutlet weak var labelNumber4: UILabel!
+    
     @IBOutlet weak var shakeLabel: UILabel!
+    
+    @IBOutlet weak var nextRoundImage: UIImageView!
+    @IBOutlet weak var nextRoundImageFail: UIImageView!
     
     @IBOutlet weak var timer: UILabel!
     
@@ -49,6 +53,8 @@ class ViewController: UIViewController {
         //view.layer.cornerRadius = 44
         
         getAndDisplayEvent()
+        nextRoundImage.isHidden = true
+        nextRoundImageFail.isHidden = true
         
     }
     
