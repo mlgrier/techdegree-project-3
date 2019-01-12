@@ -70,6 +70,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="38" height="60.5"/>
                                                         <state key="normal" image="up_half"/>
                                                         <state key="selected" image="up_half_selected"/>
+                                                        <state key="highlighted" image="up_half_selected"/>
                                                         <connections>
                                                             <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8t-Tj-xcL"/>
                                                         </connections>
@@ -78,6 +79,7 @@
                                                         <rect key="frame" x="0.0" y="60.5" width="38" height="60.5"/>
                                                         <state key="normal" image="down_half"/>
                                                         <state key="selected" image="down_half_selected"/>
+                                                        <state key="highlighted" image="down_half_selected"/>
                                                         <connections>
                                                             <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Hj-rd-Flj"/>
                                                         </connections>
@@ -116,6 +118,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="38" height="60.5"/>
                                                         <state key="normal" image="up_half"/>
                                                         <state key="selected" image="up_half_selected"/>
+                                                        <state key="highlighted" image="up_half_selected"/>
                                                         <connections>
                                                             <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n47-gJ-eRz"/>
                                                         </connections>
@@ -124,6 +127,7 @@
                                                         <rect key="frame" x="0.0" y="60.5" width="38" height="60.5"/>
                                                         <state key="normal" image="down_half"/>
                                                         <state key="selected" image="down_half_selected"/>
+                                                        <state key="highlighted" image="down_half_selected"/>
                                                         <connections>
                                                             <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nKC-2h-wLF"/>
                                                         </connections>
@@ -159,6 +163,7 @@
                                                 <rect key="frame" x="295" y="0.0" width="38" height="121"/>
                                                 <state key="normal" image="up_full"/>
                                                 <state key="selected" image="up_full_selected"/>
+                                                <state key="highlighted" image="up_full_selected"/>
                                                 <connections>
                                                     <action selector="upDownButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGv-sz-s3Y"/>
                                                 </connections>
