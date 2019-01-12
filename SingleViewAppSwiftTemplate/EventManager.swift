@@ -137,9 +137,14 @@ extension ViewController {
     
     func eventOrderCheck() {
         if (spot1 < spot2) && (spot2 < spot3) && (spot3 < spot4) {
-            
+            shakeLabel.text = "Tap events to learn more"
+            timer.isHidden = true
+            successImage.isHidden = false
             print("You WON!")
         } else {
+            shakeLabel.text = "Tap events to learn more"
+            timer.isHidden = true
+            failImage.isHidden = false
             print("NO YOU LOSE CLOWN!")
         }
     }
