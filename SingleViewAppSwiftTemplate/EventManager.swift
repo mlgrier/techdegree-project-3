@@ -9,6 +9,8 @@
 import Foundation
 import GameKit
 
+let playAgainVC = PlayAgainViewController()
+
 var arrayOfIndex = [Int]()
 
 struct HistoricalEvents {
@@ -149,10 +151,29 @@ extension ViewController {
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             failImage.isHidden = false
-            loadNextRound(delay: 5)
             seconds = 11
+            loadNextRound(delay: 5)
         }
     }
+    
+    
+    func nextRound() {
+        
+        if round == numberOfRounds {
+            // Game is over
+            playAgainVC.theScore.text = "\(points)/\(numberOfRounds)"
+            
+        } else {
+            // Continue game
+            getAndDisplayEvent()
+            successImage.isHidden = true
+            failImage.isHidden = true
+            timer.isHidden = false
+            shakeLabel.text = "Shake to complete"
+            round += 1
+        }
+    }
+    
     
     func loadNextRound(delay seconds: Int) {
         // Converts a delay in seconds to nanoseconds as signed 64 bit integer
@@ -163,23 +184,6 @@ extension ViewController {
         // Executes the nextRound method at the dispatch time on the main queue
         DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
             self.nextRound()
-        }
-    }
-    
-    func nextRound() {
-        
-        if round == numberOfRounds {
-            // Game is over
-            print("Send to the other screen showing the score")
-        } else {
-            // Continue game
-            print("Play the next round")
-            getAndDisplayEvent()
-            successImage.isHidden = true
-            failImage.isHidden = true
-            timer.isHidden = false
-            shakeLabel.text = "Shake to complete"
-            round += 1
         }
     }
     
