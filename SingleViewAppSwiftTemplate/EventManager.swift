@@ -154,13 +154,6 @@ extension ViewController {
         }
     }
     
-    // Test the branch of github and xcode
-    func xcode() {
-        if true {
-            print("test")
-        }
-    }
-    
     func loadNextRound(delay seconds: Int) {
         // Converts a delay in seconds to nanoseconds as signed 64 bit integer
         let delay = Int64(NSEC_PER_SEC * UInt64(seconds))

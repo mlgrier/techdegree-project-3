@@ -105,8 +105,8 @@
 			children = (
 				3A8AADC81DF9B85E00A2B931 /* AppDelegate.swift */,
 				3A8AADCA1DF9B85E00A2B931 /* ViewController.swift */,
-				3173C2E421D8FCE900CA96AD /* EventManager.swift */,
 				31F9494B21EB82E10004E466 /* PlayAgainViewController.swift */,
+				3173C2E421D8FCE900CA96AD /* EventManager.swift */,
 				312AA1BF21E787800019D636 /* Events.swift */,
 				3A8AADCC1DF9B85E00A2B931 /* Main.storyboard */,
 				3A8AADCF1DF9B85E00A2B931 /* Assets.xcassets */,
