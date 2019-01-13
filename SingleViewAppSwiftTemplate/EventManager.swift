@@ -150,6 +150,7 @@ extension ViewController {
             timer.isHidden = true
             failImage.isHidden = false
             loadNextRound(delay: 5)
+            seconds = 11
         }
     }
     

@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     let numberOfRounds = 5
     
     var gameTimer = Timer()
-    var seconds = 10
+    var seconds = 11
     var isTimerRunning = false
     
     @IBOutlet weak var upButton1: UIButton!
@@ -79,11 +79,12 @@ class ViewController: UIViewController {
     }
     
     func updateTimer() {
-        seconds -= 1
-        timer.text = "\(seconds)"
-        
-        if seconds <= 0 {
+        if seconds <= 1 {
+            gameTimer.invalidate()
             eventOrderCheck()
+        } else {
+            seconds -= 1
+            timer.text = "\(seconds)"
         }
         
     }
