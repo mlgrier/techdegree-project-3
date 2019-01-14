@@ -252,7 +252,7 @@
         <!--Play Again View Controller-->
         <scene sceneID="Tb2-RQ-UqC">
             <objects>
-                <viewController id="6gT-dk-ynQ" customClass="PlayAgainViewController" customModule="SingleViewAppSwiftTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayAgainVC" id="6gT-dk-ynQ" customClass="PlayAgainViewController" customModule="SingleViewAppSwiftTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hPE-AT-cFe"/>
                         <viewControllerLayoutGuide type="bottom" id="nvA-ba-nfl"/>

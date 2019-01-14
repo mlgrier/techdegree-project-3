@@ -28,10 +28,10 @@ class ViewController: UIViewController {
     
     var points = 0
     var round = 0
-    let numberOfRounds = 5
+    let numberOfRounds = 2
     
     var gameTimer = Timer()
-    var seconds = 11
+    var seconds = 21
     var isTimerRunning = false
     
     @IBOutlet weak var upButton1: UIButton!
