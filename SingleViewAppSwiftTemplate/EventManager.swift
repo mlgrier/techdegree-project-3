@@ -139,18 +139,20 @@ extension ViewController {
     }
     
     func eventOrderCheck() {
+        
         if (spot1 < spot2) && (spot2 < spot3) && (spot3 < spot4) {
+            points += 1
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             successImage.isHidden = false
-            points += 1
+            seconds = 30
             round += 1
             loadNextRound(delay: 4)
         } else {
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             failImage.isHidden = false
-            seconds = 21
+            seconds = 30
             round += 1
             loadNextRound(delay: 4)
         }

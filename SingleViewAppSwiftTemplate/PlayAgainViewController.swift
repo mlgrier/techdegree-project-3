@@ -20,7 +20,9 @@ class PlayAgainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        theScore.text = "\(vc.points) / \(vc.numberOfRounds)"
+        theScore.text = "\(vc.points)"
+        print(vc.numberOfRounds)
+        print(vc.round)
         print(vc.points)
     }
 
