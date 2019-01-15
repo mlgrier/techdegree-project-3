@@ -144,7 +144,6 @@ extension ViewController {
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             successImage.isHidden = false
-            seconds = 30
             points += 1
             round += 1
             loadNextRound(delay: 4)
@@ -152,7 +151,6 @@ extension ViewController {
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             failImage.isHidden = false
-            seconds = 30
             round += 1
             loadNextRound(delay: 4)
         }
@@ -164,7 +162,7 @@ extension ViewController {
         if round == numberOfRounds {
             
             // Game is over
-            gameTimer.invalidate()
+            stopTimer()
             
             // Move to the score page and pass var with the code below
             let next = self.storyboard?.instantiateViewController(withIdentifier: "PlayAgainVC") as! PlayAgainViewController
@@ -175,7 +173,8 @@ extension ViewController {
         } else {
             
             // Continue game
-            gameTimer.invalidate()
+            stopTimer()
+            seconds = resetSeconds
             getAndDisplayEvent()
             successImage.isHidden = true
             failImage.isHidden = true

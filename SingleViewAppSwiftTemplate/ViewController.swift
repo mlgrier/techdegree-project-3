@@ -27,12 +27,12 @@ class ViewController: UIViewController {
     var spot4 = 0
     
     var points = 0
-    var thePoints = 0
     var round = 0
     let numberOfRounds = 2
     
     var gameTimer = Timer()
-    var seconds = 30
+    var seconds = 31
+    var resetSeconds = 31
     
     @IBOutlet weak var upButton1: UIButton!
     @IBOutlet weak var upButton2: UIButton!
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
     
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        gameTimer.invalidate()
+        stopTimer()
         eventOrderCheck()
     }
     
@@ -81,12 +81,16 @@ class ViewController: UIViewController {
     
     func updateTimer() {
         if seconds <= 1 {
-            gameTimer.invalidate()
+            stopTimer()
             eventOrderCheck()
         } else {
             seconds -= 1
             timer.text = "\(seconds)"
         }
+    }
+    
+    func stopTimer() {
+        gameTimer.invalidate()
     }
     
 }
