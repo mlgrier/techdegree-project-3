@@ -10,7 +10,10 @@ import UIKit
 
 class PlayAgainViewController: UIViewController {
     
-    let vc = ViewController()
+    var thePoints = 0
+    var theNumberOfRounds = 0
+    
+    //let vc = ViewController()
 
     @IBOutlet weak var yourScoreText: UILabel!
     @IBOutlet weak var theScore: UILabel!
@@ -20,10 +23,7 @@ class PlayAgainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        theScore.text = "\(vc.points)"
-        print(vc.numberOfRounds)
-        print(vc.round)
-        print(vc.points)
+        theScore.text = "\(thePoints) / \(theNumberOfRounds)"
     }
 
     @IBAction func playAgainButton(_ sender: Any) {

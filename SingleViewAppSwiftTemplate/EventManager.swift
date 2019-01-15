@@ -142,6 +142,7 @@ extension ViewController {
         
         if (spot1 < spot2) && (spot2 < spot3) && (spot3 < spot4) {
             points += 1
+            print(points)
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             successImage.isHidden = false
@@ -168,6 +169,8 @@ extension ViewController {
             
             // Move to score page with the code below
             let next = self.storyboard?.instantiateViewController(withIdentifier: "PlayAgainVC") as! PlayAgainViewController
+            next.thePoints = points
+            next.theNumberOfRounds = numberOfRounds
             self.present(next, animated: true, completion: nil)
             
         } else {

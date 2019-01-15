@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     var spot4 = 0
     
     var points = 0
+    var thePoints = 0
     var round = 0
     let numberOfRounds = 2
     
