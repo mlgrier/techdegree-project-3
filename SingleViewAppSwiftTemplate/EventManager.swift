@@ -141,12 +141,11 @@ extension ViewController {
     func eventOrderCheck() {
         
         if (spot1 < spot2) && (spot2 < spot3) && (spot3 < spot4) {
-            points += 1
-            print(points)
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             successImage.isHidden = false
             seconds = 30
+            points += 1
             round += 1
             loadNextRound(delay: 4)
         } else {
@@ -167,7 +166,7 @@ extension ViewController {
             // Game is over
             gameTimer.invalidate()
             
-            // Move to score page with the code below
+            // Move to the score page and pass var with the code below
             let next = self.storyboard?.instantiateViewController(withIdentifier: "PlayAgainVC") as! PlayAgainViewController
             next.thePoints = points
             next.theNumberOfRounds = numberOfRounds
@@ -176,6 +175,7 @@ extension ViewController {
         } else {
             
             // Continue game
+            gameTimer.invalidate()
             getAndDisplayEvent()
             successImage.isHidden = true
             failImage.isHidden = true

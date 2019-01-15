@@ -27,6 +27,9 @@ class PlayAgainViewController: UIViewController {
     }
 
     @IBAction func playAgainButton(_ sender: Any) {
+        // Move to the score page and pass var with the code below
+        let next2 = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        self.present(next2, animated: true, completion: nil)
     }
     
 }

@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     
     var gameTimer = Timer()
     var seconds = 30
-    var isTimerRunning = false
     
     @IBOutlet weak var upButton1: UIButton!
     @IBOutlet weak var upButton2: UIButton!
