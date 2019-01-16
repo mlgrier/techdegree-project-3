@@ -146,13 +146,13 @@ extension ViewController {
             successImage.isHidden = false
             points += 1
             round += 1
-            loadNextRound(delay: 4)
+            loadNextRound(delay: 3)
         } else {
             shakeLabel.text = "Tap events to learn more"
             timer.isHidden = true
             failImage.isHidden = false
             round += 1
-            loadNextRound(delay: 4)
+            loadNextRound(delay: 3)
         }
     }
     
