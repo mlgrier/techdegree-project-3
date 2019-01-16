@@ -166,12 +166,12 @@ extension ViewController {
             
             // Move to the score page and pass var with the code below
             let next = self.storyboard?.instantiateViewController(withIdentifier: "PlayAgainVC") as! PlayAgainViewController
+            // Passing the info over to new VC
             next.thePoints = points
             next.theNumberOfRounds = numberOfRounds
             self.present(next, animated: true, completion: nil)
             
         } else {
-            
             // Continue game
             stopTimer()
             seconds = resetSeconds
@@ -180,8 +180,6 @@ extension ViewController {
             failImage.isHidden = true
             timer.isHidden = false
             shakeLabel.text = "Shake to complete"
-            
-            
         }
     }
     

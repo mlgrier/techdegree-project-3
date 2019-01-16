@@ -28,11 +28,11 @@ class ViewController: UIViewController {
     
     var points = 0
     var round = 0
-    let numberOfRounds = 2
+    let numberOfRounds = 6
     
     var gameTimer = Timer()
-    var seconds = 31
-    var resetSeconds = 31
+    var seconds = 61
+    var resetSeconds = 61
     
     @IBOutlet weak var upButton1: UIButton!
     @IBOutlet weak var upButton2: UIButton!

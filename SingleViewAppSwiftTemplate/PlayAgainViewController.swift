@@ -14,22 +14,22 @@ class PlayAgainViewController: UIViewController {
     var theNumberOfRounds = 0
     
     //let vc = ViewController()
-
+    
     @IBOutlet weak var yourScoreText: UILabel!
     @IBOutlet weak var theScore: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         theScore.text = "\(thePoints) / \(theNumberOfRounds)"
     }
-
+    
     @IBAction func playAgainButton(_ sender: Any) {
         // Move back to the event quiz page
-        let next2 = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        self.present(next2, animated: true, completion: nil)
+        let eventScreen = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        self.present(eventScreen, animated: true, completion: nil)
     }
     
 }
