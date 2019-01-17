@@ -28,8 +28,8 @@ class PlayAgainViewController: UIViewController {
     
     @IBAction func playAgainButton(_ sender: Any) {
         // Move back to the event quiz page
-        let eventScreen = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        self.present(eventScreen, animated: true, completion: nil)
+        let next2 = self.storyboard?.instantiateViewController(withIdentifier: "view") as! ViewController
+        self.present(next2, animated: true, completion: nil)
     }
     
 }

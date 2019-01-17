@@ -70,7 +70,7 @@ class ViewController: UIViewController {
     }
     
     
-    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         stopTimer()
         eventOrderCheck()
     }
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
         gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
     }
     
-    func updateTimer() {
+    @objc func updateTimer() {
         if seconds <= 1 {
             stopTimer()
             eventOrderCheck()
