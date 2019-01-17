@@ -298,6 +298,7 @@
                     <connections>
                         <outlet property="theScore" destination="doU-LP-0VJ" id="jKh-zy-SeC"/>
                         <outlet property="yourScoreText" destination="FKU-S2-gtw" id="BFM-MR-zvP"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="mySegue" id="N5S-vU-zmw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYg-S0-zkl" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -175,6 +175,7 @@ extension ViewController {
             // Continue game
             stopTimer()
             seconds = resetSeconds
+            arrayOfIndex = [Int]()
             getAndDisplayEvent()
             successImage.isHidden = true
             failImage.isHidden = true
