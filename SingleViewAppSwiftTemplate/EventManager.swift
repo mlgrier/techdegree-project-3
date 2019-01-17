@@ -160,10 +160,8 @@ extension ViewController {
     func nextRound() {
         
         if round == numberOfRounds {
-            
             // Game is over
             stopTimer()
-            
             // Move to the score page and pass var with the code below
             let next = self.storyboard?.instantiateViewController(withIdentifier: "PlayAgainVC") as! PlayAgainViewController
             // Passing the info over to new VC

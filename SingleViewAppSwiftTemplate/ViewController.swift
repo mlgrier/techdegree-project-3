@@ -56,7 +56,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //view.layer.cornerRadius = 44
         
         successImage.isHidden = true
         failImage.isHidden = true
