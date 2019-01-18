@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     var points = 0
     var round = 0
-    var numberOfRounds = 7
+    var numberOfRounds = 6
     
     var gameTimer = Timer()
     var seconds = 61
